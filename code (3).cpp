@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 char Game(long long v,long long c, char s)
 {
@@ -65,10 +66,10 @@ int main()
     string s;
     char dp[10000][10000];
     memset(dp, 'Z', sizeof(dp));
-    scanf("%d",&t);
+    cin>>&t;
     while(t--)
     {
-        scanf("%d",&n);
+        cin>>n;
         cin>>s;
         long long v = 0, c= 0;
         for(int i=0;i<n;i++)
